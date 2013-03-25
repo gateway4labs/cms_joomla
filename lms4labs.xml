@@ -15,18 +15,18 @@
 	<description>COM_LMS4LABS_DESCRIPTION</description>
  
     <!-- Runs on install -->
-	<!--<install> 
+	<install> 
 		<sql>
 			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
 		</sql>
-	</install> -->
+	</install>
     
     <!-- Runs on uninstall -->
-	<!-- <uninstall> 
+	<uninstall> 
 		<sql>
 			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
 		</sql>
-	</uninstall> -->
+	</uninstall>
 	<!--<update>
 		<schemas>
 			<schemapath type="mysql">sql/updates/mysql</schemapath>
@@ -66,7 +66,7 @@
 			<filename>lms4labs.php</filename>
 			<!-- <filename>controller.php</filename> -->
 			<!-- SQL files section -->
-			<!-- <folder>sql</folder> -->
+			<folder>sql</folder>
 			<!-- tables files section -->
 			<!-- <folder>tables</folder> -->
 			<!-- models files section -->

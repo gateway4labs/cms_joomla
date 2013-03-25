@@ -15,19 +15,39 @@ class LMS4LabsViewLMS4Labs extends JView
         {
             $scorm_message = array('action' => 'reserve', 'experiment' => 'robot');
 
-            $payload = array('user-id' => 'mikel', 'full-name' => 'Mikel Emaldi', 'is-admin' => 'True', 'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:12.0) Gecko/20100101 Firefox/12.0', 'origin-ip' => '192.168.1.1', 'referer' => 'http://.../', 'courses' => array('course' => 's'), 'request-payload' => json_encode($scorm_message));
+            $user = JFactory::getUser();
+            
+            if ($user->get('isRoot') == 1) {
+                $isAdmin = 'True';
+            } else {
+                $isAdmin = 'False';
+            }
+            $referer = JURI::current();
+
+            $payload = array('user-id' => $user->username, 'full-name' => $user->name, 'is-admin' => $isAdmin, 'user-agent' => $_SERVER['HTTP_USER_AGENT'], 'origin-ip' => $_SERVER['REMOTE_ADDR'], 'referer' => $referer, 'courses' => array('course' => 's'), 'request-payload' => json_encode($scorm_message));
         
             $process = curl_init();
     
-            //TODO: CONFIGURATION!!!!
-            curl_setopt($process, CURLOPT_USERPWD, 'user' . ":" . 'password');
-            curl_setopt($process, CURLOPT_URL, 'http://localhost:5000/labmanager/requests/');
+            $data = $this->getLMS4LabsData();
+            
+            
+            curl_setopt($process, CURLOPT_USERPWD, $data[1] . ":" . $data[2]);
+            curl_setopt($process, CURLOPT_URL, $data[0]);
             curl_setopt($process, CURLOPT_POST, 1);
             curl_setopt($process, CURLOPT_POSTFIELDS, json_encode($payload));
             curl_setopt($process, CURLOPT_RETURNTRANSFER, TRUE);
             $this->url = curl_exec($process);
- 
+            
             // Display the view
             parent::display($tpl);
+        }
+        
+        private function getLMS4LabsData(){
+            $db = JFactory::getDBO();
+
+            $query = 'SELECT host, user, password FROM #__lms4labs_config';
+            $db->setQuery($query);
+            $data = $db->loadRow();
+            return $data;
         }
 }
