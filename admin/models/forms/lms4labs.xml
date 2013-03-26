@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+        <fieldset>
+                <field
+                        name="id"
+                        type="hidden"
+                />
+                <field
+                        name="lab_id"
+                        type="text"
+                        label="COM_LMS4LABS_LAB_ID_LABEL"
+                        description="COM_LMS4LABS_LAB_ID_DESC"
+                        size="40"
+                        class="inputbox"
+                        default=""
+                />
+                <field
+                        name="lab_name"
+                        type="text"
+                        label="COM_LMS4LABS_LAB_NAME_LABEL"
+                        description="COM_LMS4LABS_LAB_NAME_DESC"
+                        size="40"
+                        class="inputbox"
+                        default=""
+                />
+        </fieldset>
+</form>

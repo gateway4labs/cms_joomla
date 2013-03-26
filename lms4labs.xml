@@ -42,19 +42,19 @@
 		<filename>lms4labs.php</filename>
 		<filename>controller.php</filename>
 		<folder>views</folder>
-		<!--<folder>models</folder>
-		<folder>language</folder> -->
-		<folder>lib</folder>
+		<folder>models</folder>
+		<!--<folder>language</folder>
+		<folder>lib</folder>-->
 	</files>
  
-	<!--<media destination="com_weblab" folder="media">
+	<media destination="com_lms4labs" folder="media">
 		<filename>index.html</filename>
 		<folder>images</folder>
-	</media>-->
+	</media>
  
     <administration>
 		<!-- Administration Menu Section -->
-		<!--<menu img="../media/com_weblab/images/weblab-16x16.png">COM_WEBLAB_MENU</menu>-->
+		<menu img="../media/com_lms4labs/images/lms4labs-16x16.png">COM_LMS4LABS_MENU</menu>
         <menu>LMS4Labs Admin</menu>
 		<!-- Administration Main File Copy Section -->
 		<!-- Note the folder attribute: This attribute describes the folder
@@ -64,26 +64,26 @@
 			<!-- Admin Main File Copy Section -->
 			<filename>index.html</filename>
 			<filename>lms4labs.php</filename>
-			<!-- <filename>controller.php</filename> -->
+			<filename>controller.php</filename>
 			<!-- SQL files section -->
 			<folder>sql</folder>
 			<!-- tables files section -->
-			<!-- <folder>tables</folder> -->
+			<folder>tables</folder>
 			<!-- models files section -->
-			<!-- <folder>models</folder> -->
+			<folder>models</folder>
 			<!-- views files section -->
-			<!-- <folder>views</folder> -->
+			<folder>views</folder>
 			<!-- controllers files section -->
-			<!-- <folder>controllers</folder> -->
+			<folder>controllers</folder>
 			<!-- <folder>lib</folder> -->
 			<!-- helpers files section -->
 			<!--<folder>helpers</folder>-->
 		</files>
  
-		<!--<languages folder="admin">
+		<languages folder="admin">
 			<language tag="en-GB">language/en-GB/en-GB.com_lms4labs.ini</language>
 			<language tag="en-GB">language/en-GB/en-GB.com_lms4labs.sys.ini</language>
-		</languages>-->
+		</languages>
 	</administration>
  
 </extension>

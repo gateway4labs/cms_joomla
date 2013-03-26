@@ -8,5 +8,3 @@ jimport('joomla.application.component.controller');
 class LMS4LabsController extends JController
 {
 }
-
-?>
