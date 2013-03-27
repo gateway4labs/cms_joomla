@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `#__lms4labs`;
 
 CREATE TABLE IF NOT EXISTS `#__lms4labs` (
-  `id` int(10) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `lab_id` varchar(200) NOT NULL,
   `lab_name` varchar(50) NOT NULL,
   PRIMARY KEY (`id`,`lab_id`,`lab_name`)
