@@ -14,6 +14,8 @@
 	<!-- The description is optional and defaults to the name -->
 	<description>COM_LMS4LABS_DESCRIPTION</description>
  
+    <scriptfile>scriptfile.php</scriptfile>
+ 
     <!-- Runs on install -->
 	<install> 
 		<sql>

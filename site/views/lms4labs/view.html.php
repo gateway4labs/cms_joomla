@@ -13,7 +13,9 @@ class LMS4LabsViewLMS4Labs extends JView
         // Overwriting JView display method
         function display($tpl = null) 
         {
-            $scorm_message = array('action' => 'reserve', 'experiment' => 'robot');
+            $experiment = JRequest::getVar('experiment');
+            
+            $scorm_message = array('action' => 'reserve', 'experiment' => $experiment);
 
             $user = JFactory::getUser();
             
