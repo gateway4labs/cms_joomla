@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" version="2.5.0" method="upgrade">
  
-	<name>COM_LMS4LABS</name>
+	<name>LMS4Labs</name>
 	<!-- The following elements are optional and free of formatting conttraints -->
 	<creationDate>March 2012</creationDate>
 	<author>Mikel Emaldi - Pablo Orduna</author>
@@ -45,8 +45,6 @@
 		<filename>controller.php</filename>
 		<folder>views</folder>
 		<folder>models</folder>
-		<!--<folder>language</folder>
-		<folder>lib</folder>-->
 	</files>
  
 	<media destination="com_lms4labs" folder="media">
@@ -57,7 +55,7 @@
     <administration>
 		<!-- Administration Menu Section -->
 		<menu img="../media/com_lms4labs/images/lms4labs-16x16.png">COM_LMS4LABS_MENU</menu>
-        <menu>LMS4Labs Admin</menu>
+        <!--<menu>LMS4Labs Admin</menu>-->
 		<!-- Administration Main File Copy Section -->
 		<!-- Note the folder attribute: This attribute describes the folder
 			to copy FROM in the package to install therefore files copied
@@ -84,7 +82,7 @@
  
 		<languages folder="admin">
 			<language tag="en-GB">language/en-GB/en-GB.com_lms4labs.ini</language>
-			<language tag="en-GB">language/en-GB/en-GB.com_lms4labs.sys.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_lms4labs.sys.ini</language>
 		</languages>
 	</administration>
  

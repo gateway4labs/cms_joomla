@@ -14,9 +14,9 @@ class com_lms4labsInstallerScript {
         // installing module
         $module_installer = new JInstaller;
         if(@$module_installer->install(dirname(__FILE__).DIRECTORY_SEPARATOR.'modules'.DIRECTORY_SEPARATOR.'module'))
-            echo '<p>'.JText::_('COM_LMS4LABS_MODULE_INSTALL_SUCCESS').'</p>';
+            echo '<p>'.JText::_('MOD_LMS4LABS_MODULE_INSTALL_SUCCESS').'</p>';
         else
-           echo '<p>'.JText::_('COM_LMS4LABS_MODULE_INSTALL_FAILED').'</p>';
+           echo '<p>'.JText::_('MOD_LMS4LABS_MODULE_INSTALL_FAILED').'</p>';
     }
 
     /**
@@ -37,9 +37,9 @@ class com_lms4labsInstallerScript {
         $lms4labs_module = $db->loadObject();
         $module_uninstaller = new JInstaller;
         if($module_uninstaller->uninstall('module', $lms4labs_module->id))
-        	 echo '<p>'.JText::_('COM_LMS4LABS_MODULE_UNINSTALL_SUCCESS').'</p>';
+        	 echo '<p>'.JText::_('MOD_LMS4LABS_MODULE_UNINSTALL_SUCCESS').'</p>';
         else
-        	echo '<p>'.JText::_('COM_LMS4LABS_MODULE_UNINSTALL_FAILED').'</p>';
+        	echo '<p>'.JText::_('MOD_LMS4LABS_MODULE_UNINSTALL_FAILED').'</p>';
     }
 
     /**
