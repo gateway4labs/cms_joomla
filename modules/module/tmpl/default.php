@@ -13,6 +13,6 @@ defined('_JEXEC') or die;
 ?>
 <ul>
     <?php foreach(modLMS4LabsHelper::getExperiments() as $item): ?>
-            <li><a href="index.php?option=com_lms4labs&experiment=<?php echo $item->lab_id ?>"><?php echo $item->lab_name; ?></a></li>
+            <li><a href="index.php?option=com_gateway4labs&experiment=<?php echo $item->lab_id ?>"><?php echo $item->lab_name; ?></a></li>
     <?php endforeach; ?>
 </ul>

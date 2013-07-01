@@ -21,7 +21,7 @@ class LMS4LabsModelLMS4Labses extends JModelList
 		// Select some fields
 		$query->select('id,lab_id,lab_name');
 		// From the hello table
-		$query->from('#__lms4labs');
+		$query->from('#__gateway4labs');
 		return $query;
 	}
 }

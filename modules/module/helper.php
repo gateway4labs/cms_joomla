@@ -15,7 +15,7 @@ class modLMS4LabsHelper
  
         public static function getExperiments() {
                 $db = JFactory::getDBO();
-                $query = "SELECT id, lab_id, lab_name FROM #__lms4labs";
+                $query = "SELECT id, lab_id, lab_name FROM #__gateway4labs";
                 $db->setQuery($query);
                 $column = $db->loadObjectList();
                 return $column;

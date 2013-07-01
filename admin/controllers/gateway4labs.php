@@ -12,7 +12,7 @@ class LMS4LabsControllerLMS4Labs extends JControllerForm
 {
     public function __construct($config = array()) 
         { 
-            $this->view_list = 'lms4labses'; 
+            $this->view_list = 'gateway4labses'; 
             parent::__construct($config); 
         }
 }

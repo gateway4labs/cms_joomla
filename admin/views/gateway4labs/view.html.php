@@ -50,9 +50,9 @@ class LMS4LabsViewLMS4Labs extends JView
         $input->set('hidemainmenu', true);
         $isNew = ($this->item->id == 0);        
 		JToolBarHelper::title($isNew ? JText::_('COM_LMS4LABS_NEW')
-					     : JText::_('COM_LMS4LABS_EDIT'), 'lms4labs');
-        JToolBarHelper::save('lms4labs.save');
-        JToolBarHelper::cancel('lms4labs.cancel', $isNew ? 'JTOOLBAR_CANCEL' : 'JTOOLBAR_CLOSE');
+					     : JText::_('COM_LMS4LABS_EDIT'), 'gateway4labs');
+        JToolBarHelper::save('gateway4labs.save');
+        JToolBarHelper::cancel('gateway4labs.cancel', $isNew ? 'JTOOLBAR_CANCEL' : 'JTOOLBAR_CLOSE');
 	}
 
 	protected function setDocument() 

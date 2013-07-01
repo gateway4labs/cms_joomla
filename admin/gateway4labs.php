@@ -4,7 +4,7 @@ defined('_JEXEC') or die('Restricted access');
  
 // Set some global property
 $document = JFactory::getDocument();
-$document->addStyleDeclaration('.icon-48-lms4labs {background-image: url(../media/com_lms4labs/images/lms4labs-48x48.png);}');
+$document->addStyleDeclaration('.icon-48-gateway4labs {background-image: url(../media/com_gateway4labs/images/gateway4labs-48x48.png);}');
 
 // import joomla controller library
 jimport('joomla.application.component.controller');

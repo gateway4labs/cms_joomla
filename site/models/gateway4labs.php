@@ -38,7 +38,7 @@ class LMS4LabsModelLMS4Labs extends JModelItem
 		$exp_array = array();
 		$exp_names = array();
 		
-        $query = "SELECT id, lab_id, lab_name FROM #__lms4labs";
+        $query = "SELECT id, lab_id, lab_name FROM #__gateway4labs";
         $db->setQuery($query);
         $rows = $db->loadRowList();
         foreach($rows as $row){

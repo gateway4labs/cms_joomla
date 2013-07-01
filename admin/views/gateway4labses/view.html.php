@@ -42,10 +42,10 @@ class LMS4LabsViewLMS4Labses extends JView
 
 	protected function addToolBar() 
 	{
-        JToolBarHelper::title(JText::_('COM_LMS4LABS_LIST'), 'lms4labs');
-        JToolBarHelper::deleteList('', 'lms4labses.delete');
-        JToolBarHelper::editList('lms4labs.edit');
-        JToolBarHelper::addNew('lms4labs.add');
+        JToolBarHelper::title(JText::_('COM_LMS4LABS_LIST'), 'gateway4labs');
+        JToolBarHelper::deleteList('', 'gateway4labses.delete');
+        JToolBarHelper::editList('gateway4labs.edit');
+        JToolBarHelper::addNew('gateway4labs.add');
 	}
 
 	protected function setDocument() 

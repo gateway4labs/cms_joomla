@@ -47,7 +47,7 @@ class LMS4LabsViewLMS4Labs extends JView
         private function getLMS4LabsData(){
             $db = JFactory::getDBO();
 
-            $query = 'SELECT host, user, password FROM #__lms4labs_config';
+            $query = 'SELECT host, user, password FROM #__gateway4labs_config';
             $db->setQuery($query);
             $data = $db->loadRow();
             return $data;

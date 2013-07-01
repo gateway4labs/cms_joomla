@@ -3,7 +3,7 @@
 // no direct access
 defined('_JEXEC') or die('Restricted access');
 
-class com_lms4labsInstallerScript {
+class com_gateway4labsInstallerScript {
 
     /**
      * method to install the component
@@ -32,11 +32,11 @@ class com_lms4labsInstallerScript {
         
         
         
-        $sql = 'SELECT `extension_id` AS id, `name`, `element`, `folder` FROM #__extensions WHERE `type` = "module" AND ( (`element` = "mod_lms4labs") ) ';
+        $sql = 'SELECT `extension_id` AS id, `name`, `element`, `folder` FROM #__extensions WHERE `type` = "module" AND ( (`element` = "mod_gateway4labs") ) ';
         $db->setQuery($sql);
-        $lms4labs_module = $db->loadObject();
+        $gateway4labs_module = $db->loadObject();
         $module_uninstaller = new JInstaller;
-        if($module_uninstaller->uninstall('module', $lms4labs_module->id))
+        if($module_uninstaller->uninstall('module', $gateway4labs_module->id))
         	 echo '<p>'.JText::_('MOD_LMS4LABS_MODULE_UNINSTALL_SUCCESS').'</p>';
         else
         	echo '<p>'.JText::_('MOD_LMS4LABS_MODULE_UNINSTALL_FAILED').'</p>';

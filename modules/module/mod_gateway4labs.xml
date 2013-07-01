@@ -6,7 +6,7 @@
         <creationDate>March 2013</creationDate>
         <author>Mikel Emaldi - Pablo Orduna</author>
         <authorEmail>m.emaldi@deusto.es - pablo.orduna@deusto.es</authorEmail>
-        <authorUrl>https://github.com/lms4labs/lms_joomla</authorUrl>
+        <authorUrl>https://github.com/gateway4labs/lms_joomla</authorUrl>
         <copyright></copyright>
         <license></license>
         <!--  The version string is stored in the extension table -->
@@ -17,15 +17,15 @@
         <!-- Note the folder attribute: This attribute describes what to copy
                 into the module folder -->
         <files>
-                <filename module="mod_lms4labs">mod_lms4labs.php</filename>
-                <filename>mod_lms4labs.xml</filename>
+                <filename module="mod_gateway4labs">mod_gateway4labs.php</filename>
+                <filename>mod_gateway4labs.xml</filename>
                 <filename>helper.php</filename>
                 <folder>tmpl</folder>
         </files>
         
         <languages>
-            <language tag="en-GB">language/en-GB/en-GB.mod_lms4labs.ini</language>
-            <language tag="en-GB">language/en-GB/en-GB.mod_lms4labs.sys.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.mod_gateway4labs.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.mod_gateway4labs.sys.ini</language>
         </languages>
         
 </extension>

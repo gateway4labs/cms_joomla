@@ -34,7 +34,7 @@ class LMS4LabsModelLMS4Labs extends JModelAdmin
 	public function getForm($data = array(), $loadData = true) 
 	{
 		// Get the form.
-		$form = $this->loadForm('com_lms4labs.lms4labs', 'lms4labs',
+		$form = $this->loadForm('com_gateway4labs.gateway4labs', 'gateway4labs',
 		                        array('control' => 'jform', 'load_data' => $loadData));
 		if (empty($form)) 
 		{
@@ -51,7 +51,7 @@ class LMS4LabsModelLMS4Labs extends JModelAdmin
 	protected function loadFormData() 
 	{
 		// Check the session for previously entered form data.
-		$data = JFactory::getApplication()->getUserState('com_lms4labs.edit.lms4labs.data', array());
+		$data = JFactory::getApplication()->getUserState('com_gateway4labs.edit.gateway4labs.data', array());
 		if (empty($data)) 
 		{
 			$data = $this->getItem();

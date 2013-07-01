@@ -10,6 +10,6 @@
 // No direct access to this file
 defined('_JEXEC') or die;
  
-JLoader::register('modLMS4LabsHelper', JPATH_BASE.'/modules/mod_lms4labs/helper.php');
+JLoader::register('modLMS4LabsHelper', JPATH_BASE.'/modules/mod_gateway4labs/helper.php');
  
-require JModuleHelper::getLayoutPath('mod_lms4labs', $params->get('layout', 'default'));
+require JModuleHelper::getLayoutPath('mod_gateway4labs', $params->get('layout', 'default'));

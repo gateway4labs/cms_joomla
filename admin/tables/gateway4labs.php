@@ -17,6 +17,6 @@ class LMS4LabsTableLMS4Labs extends JTable
 	 */
 	function __construct(&$db) 
 	{
-		parent::__construct('#__lms4labs', 'id', $db);
+		parent::__construct('#__gateway4labs', 'id', $db);
 	}
 }
